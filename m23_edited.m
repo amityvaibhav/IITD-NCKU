@@ -1,5 +1,5 @@
     % Flash drought detection using MATLAB
-    % H.J. Chu version 2    2024/3/23
+    % Vaibhav Kumar version 2    2024/3/23
     %         version 3     2024/4/03
     %         version 3.1   2024/4/19
     %         version 3.2   2024/4/22
@@ -14,7 +14,7 @@
      
     clear all; close all; clc;
    
-    load ("ERA5L_RZSM_1981-2020_India_Pentad_Percentile.mat");
+    load ("file.mat");
     
     bb1(1:size(b5,1),1:size(b5,2))=0;
     bb2(1:size(b5,1),1:size(b5,2))=0;
