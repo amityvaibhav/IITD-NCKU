@@ -11,10 +11,10 @@ fprintf('Starting consensus probability computation...\n')
 %% Load Flash Drought Masks (1 = FD, 0 = No FD)
 %% =========================================================
 
-load('WATERGAP_FDmask_India.mat','FD_mask');  WG = FD_mask;
-load('H08_FDmask_India.mat','FD_mask');       H08 = FD_mask;
-load('ERA5L_FDmask_India.mat','FD_mask');     ERA = FD_mask;
-load('GLEAM_FDmask_India.mat','FD_mask');     GLEAM = FD_mask;
+load('file01.mat','FD_mask');      
+load('file02.mat','FD_mask');      
+load('file03.mat','FD_mask');     
+load('file04.mat','FD_mask');     
 
 clear FD_mask
 
