@@ -3,7 +3,7 @@
 % ΔT (Onset Timing Difference) + OCR (Onset Coincidence Ratio)
 %
 % Author  : Vaibhav Kumar
-% Project : FD_India
+% Project : Flash Drought India
 % Created : 06 March 2026
 %%====================================================================%%
 
