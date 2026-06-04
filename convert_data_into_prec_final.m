@@ -1,7 +1,5 @@
 %%------------------------------------------------------------%%
 % FD_India: Pixel-wise Pentad-of-Year Percentile Transformation
-% 1981–2020 | 73 pentads/year | Continuous percentiles (0–100)
-% Bias-corrected empirical percentile (r - 0.5)/n
 %%------------------------------------------------------------%%
 
 clear; close all; clc;
@@ -67,7 +65,7 @@ for p = 1:nPentadsPerYear
 end
 
 %%---------------- SAVE ------------------------%%
-save("ERA5L_RZSM_1981-2020_India_Pentad_Percentile_modified.mat","RZSM_pct", "-v7.3");
+save("ERA5L_RZSM_1981-2020_India_Pentad_Percentile.mat","RZSM_pct", "-v7.3");
 disp("Pentad-of-year percentile transformation completed.");
 
 %%---------------- Percentile Distribution Check ----------------%%
