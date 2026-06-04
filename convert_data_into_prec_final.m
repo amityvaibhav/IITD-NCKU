@@ -7,7 +7,7 @@
 clear; close all; clc;
 
 %%---------------- USER SETTINGS ----------------%%
-inFile  = "ERA5L_RZSM_1981-2020_India_Pentad.mat";  
+inFile  = "file01.mat";  
 varName = "RZSM";                                   
 minValidYears = 5;   % Recommended: 20 (out of 40)
 
