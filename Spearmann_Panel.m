@@ -1,16 +1,8 @@
-%%--------------FD_India: Spearman Correlation Panel--------------%%
-%%--------------HESS-ready | desert/snow preserved---------------%%
+%%-------------- Spearman Correlation Panel--------------%%
 close all; clear; clc
 
 %%---------------- Provide input files -----------------------------%%
-load('WATERGAP_vs_H08_Spearman.mat','rho_map');        WG_H08 = rho_map;
-load('WATERGAP_vs_ERA5L_Spearman.mat','rho_map');      WG_ERA = rho_map;
-load('WATERGAP_vs_GLEAM_Spearman.mat','rho_map');      WG_GLEAM = rho_map;
-
-load('H08_vs_ERA5L_Spearman.mat','rho_map');           H08_ERA = rho_map;
-load('H08_vs_GLEAM_Spearman.mat','rho_map');           H08_GLEAM = rho_map;
-
-load('ERA5L_vs_GLEAM_Spearman.mat','rho_map');         ERA_GLEAM = rho_map;
+load('file01.mat','rho_map');        WG_H08 = rho_map;
 
 %%---------------- India domain (0.25°) ----------------------------%%
 lon0 = 65; lon1 = 96.5;
@@ -117,6 +109,6 @@ cb.Label.FontSize = 14;
 set(gcf,'Color','w')
 drawnow
 
-exportgraphics(gcf,'RZSM_Spearman_ProductAgreement_India_final.tif','Resolution',600);
+exportgraphics(gcf,'output.tif','Resolution',600);
 
 disp('Spearman correlation panel exported successfully.');
