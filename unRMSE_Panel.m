@@ -1,5 +1,5 @@
-%%--------------FD_India: ubRMSE Computation + Panel Plot--------------%%
-%%--------------HESS-ready | desert/snow preserved--------------------%%
+%%--------------ubRMSE Computation--------------%%
+
 close all; clear; clc
 
 %% =========================================================
@@ -223,6 +223,6 @@ cb.Label.FontSize = 14;
 set(gcf,'Color','w')
 drawnow
 
-exportgraphics(gcf,'RZSM_ubRMSE_ProductAgreement_India_final.tif','Resolution',600);
+exportgraphics(gcf,'output_file.tif','Resolution',600);
 
 disp('ubRMSE panel exported successfully.')
