@@ -172,6 +172,6 @@ cb2.Label.FontWeight = 'bold';
 set(gcf,'Color','w')
 
 exportgraphics(gcf,...
-'RZSM_OnsetTimingCoherence_India_final.tif','Resolution',600)
+'output.tif','Resolution',600)
 
 disp('ΔT + OCR panel exported successfully.')
