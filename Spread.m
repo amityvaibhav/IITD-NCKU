@@ -1,11 +1,9 @@
 %%====================================================================%%
-% FD_India: Structural Spread (IQR) Computation and Visualization
+% Structural Spread (IQR) Computation and Visualization
 %
 % Computes structural spread of flash drought frequency across
-% WATERGAP, H08, ERA5-Land, and GLEAM
-%
-% Author  : Prajwal Giri
-% Project : FD_India
+% % Author  : Vaibhav Kumar
+% Project : Flash Drought India
 %%====================================================================%%
 
 close all; clear; clc
@@ -17,10 +15,10 @@ fprintf('Run date: %s\n\n',datestr(now));
 %% Load flash drought frequency datasets
 %% =========================================================
 
-load('WATERGAP_FD_frequency_total_India.mat','FD_freq_total'); WG = FD_freq_total;
-load('H08_FD_frequency_total_India.mat','FD_freq_total');      H08 = FD_freq_total;
-load('ERA5L_FD_frequency_total_India.mat','FD_freq_total');    ERA = FD_freq_total;
-load('GLEAM_FD_frequency_total_India.mat','FD_freq_total');    GLEAM = FD_freq_total;
+load('file01.mat','FD_freq_total');      WG = FD_freq_total;
+load('file02.mat','FD_freq_total');      H08 = FD_freq_total;
+load('file03.mat','FD_freq_total');      ERA = FD_freq_total;
+load('file04.mat','FD_freq_total');     GLEAM = FD_freq_total;
 
 clear FD_freq_total
 
