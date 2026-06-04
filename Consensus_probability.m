@@ -1,8 +1,8 @@
 %%====================================================================%%
-% FD_India: Multi-Product Consensus Probability
+%  Multi-Product Consensus Probability
 %
-% Author  : Prajwal Giri
-% Project : FD_India
+% Author  : Vaibhav Kumar
+% Project : Flash Drought India
 %%====================================================================%%
 
 close all; clear; clc
@@ -165,8 +165,6 @@ cb.Label.FontSize = 14;
 %% Export figure
 %% =========================================================
 
-exportgraphics(gcf,...
-'RZSM_ConsensusProbability_India_final.tif',...
-'Resolution',600)
+exportgraphics(gcf,'outputfile.tif','Resolution',600)
 
 fprintf('Consensus probability panel exported successfully\n');
